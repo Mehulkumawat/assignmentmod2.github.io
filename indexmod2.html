@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mod2-assignment</title>
+    <style>
+        
+        h1{
+            
+            text-align: center;
+            color: #000000;
+        }
+        section{
+            width: 100%;
+            
+        }
+        /* big one
+        ____________________________________________________________ */
+        #div1{
+            border: 2px solid black;
+            display: inline-block;
+            width: 30%;
+            height: auto;
+            background-color: chocolate;
+            margin-left: auto;
+            margin-right: auto;
+        }#div2{
+            border: 2px solid black;
+            display: inline-block;
+            width: 30%;
+            height: auto;
+            background-color: cornflowerblue;
+            margin-left: auto;
+            margin-right: auto;
+        }#div3{
+            border: 2px solid black;
+            display: inline-block;
+            width: 30%;
+            height: auto;
+            background-color: darkgray;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* inside box 
+        _____________________________________________________________*/
+        section div div{
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+            width: fit-content;
+            margin-left: auto;
+            padding-left: 5px;
+            padding-right: 5px;
+            background-color: chartreuse;
+        }
+        /* ___________________________________________________________*/ 
+        @media (min-width: 992px) {
+            .desktop1 , .desktop2 , .desktop3{
+                float: left;
+                border: 2px solid black;
+                
+            }
+            #div1{
+                width: 30%;
+                margin-left: 10px;
+            }
+            #div2{
+                width:30% ;
+                margin-left: 10px;
+
+            }
+            #div3{
+                width: 30%;
+                margin-left: 10px;
+
+                
+            }
+
+        }
+        @media (min-width: 768px)  and (max-width: 991px) {
+            .tablet1 , .tablet2 , .tablet3{
+                float: left;
+                border: 2px solid black;
+            }
+            #div1{
+                width: 40% ;
+                display: inline;
+                padding-left: 10px;
+                margin-left: 10px;
+                margin-bottom: 5px;
+                
+            }
+            #div2{
+                width: 40%;
+                display: inline;
+                margin-left: 10px;
+                margin-bottom: 5px;
+                padding-left: 10px;
+               
+            }
+            #div3{
+                width: 81.5%;
+                display: block;
+                margin-top: 5px;
+                margin-left: 10px;
+                padding-left: 20px;
+            }
+        }
+        @media (max-width: 767px ){
+            .mobile1 , .mobile2 , .mobile3{
+                float: left;
+                border: 2px solid black;
+            }
+            #div1{
+                width: 90%;
+                display: block;
+                padding-left: 10px;
+                margin-bottom: 5px;
+            }
+            #div2{
+                width: 90%;
+                padding-left: 10px;
+                display: block;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+            #div3{
+                width: 90%;
+                padding-left: 10px;
+                display: block;
+                margin-top: 5px;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Our Menu</h1>
+    <section class="box1">
+        <div class="desktop1 tablet1 mobile1" id="div1">
+            <div class="box">chicken</div>
+            <p> loren epsum ...add your content here whatever you want to add here </p>
+        </div>
+        <div class="desktop2 tablet2 mobile2" id="div2">
+            <div class="box">beef</div>
+            <p> loren epsum ...add your content here whatever you want to add here </p>
+        </div>
+        <div class="desktop3 tablet3 mobile3" id="div3">
+            <div>sushi</div>
+            <p> loren epsum ...add your content here whatever you want to add here </p>
+        </div>
+    </section>
+    
+</body>
+</html>
